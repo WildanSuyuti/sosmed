@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
           children: _pages,
         ),
         bottomNavigationBar: BottomNavigationBar(
+          key: const Key('bottom_nav'),
           currentIndex: _index,
           showSelectedLabels: true,
           showUnselectedLabels: true,

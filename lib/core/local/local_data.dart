@@ -43,7 +43,7 @@ class LocalData {
   }
 
   Future<List<Post>?> get postList async {
-    final data = await _getData(LocalKeys.post);
+    final data = await _getData(LocalKeys.post) ?? [];
     return List<Post>.from(data.map((e) => e.toEntity()));
   }
 
