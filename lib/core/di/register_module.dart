@@ -5,7 +5,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 import 'package:logique_test/core/network/dio_client.dart';
-import 'package:m_toast/m_toast.dart';
 import 'package:hive/hive.dart';
 
 @module
@@ -15,9 +14,6 @@ abstract class RegisterModule {
 
   @lazySingleton
   DioClient get client => DioClient('https://dummyapi.io/data/v1/');
-
-  @lazySingleton
-  ShowMToast get toast => ShowMToast();
 
   @preResolve
   @lazySingleton

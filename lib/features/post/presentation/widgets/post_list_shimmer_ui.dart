@@ -17,6 +17,7 @@ class PostListShimmerUI extends StatelessWidget {
             child: RoundedContainer(
               border: Border.all(color: Colors.grey),
               padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.only(bottom: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
